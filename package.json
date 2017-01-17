@@ -4,7 +4,7 @@
   "description": "Singleton Local Storage settings for page",
   "main": "es5/index.js",
   "scripts": {
-    "test": "browserify test.js -o es5/test.js -t [ babelify --presets [ env ] ] -u es5",
+    "test": "node node_modules/browserify/bin/cmd test.js -o es5/test.js -t [ babelify --presets [ env ] ] -u es5",
     "build": "node ./node_modules/babel-cli/bin/babel index.js -d es5/"
   },
   "repository": {
